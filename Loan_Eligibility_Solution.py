@@ -116,6 +116,9 @@ data=pd.read_csv("D:\LoansTrainingSetV2\LoansTrainingSetV2.csv",low_memory=False
 data.head()
 len(data)
 
+data.columns
+
+data.Loan ID.duplicated()
 ##Drop the duplicates with respect to LOAN ID
 data.drop_duplicates(subset="Loan ID",keep='first',inplace=True)
 
